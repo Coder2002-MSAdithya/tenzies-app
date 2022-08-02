@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', 'Inter', sans-serif;
+}
+
+body {
+    background-color: #0B2434;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 85vw;
+    height: 90vh;
+    border-radius: 5px;
+}
+
+.dies-container{
+    display: grid;
+    grid-template-rows: repeat(2, 50px);
+    grid-template-columns: repeat(5, 50px);
+    grid-gap: 20px 10px;
+}
+
+.die{
+    background-color: #000000;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    border-radius: 11px;
+    font-weight: 700;
+    font-size: 2rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.die i{
+    font-size: 3.5rem;
+}
+
+.game-stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 7px;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.game-play{
+    background: #5035FF;
+    box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.18);
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 17px;
+    padding: 10px 35px;
+}
+
+.game-play:focus{
+    outline: none;
+}
+
+.game-play:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.about-game h1{
+    text-align: center;
+}
+
+.about-game p{
+    font-weight: normal;
+    font-family: 'Inter';
+    text-align: center;
+}
+
+.win-text p{
+    text-align: center;
+}
